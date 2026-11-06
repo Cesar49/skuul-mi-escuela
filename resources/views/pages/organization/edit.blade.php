@@ -1,14 +1,14 @@
 @extends('layouts.app', ['breadcrumbs' => [
-    ['href' => route('dashboard'), 'text' => 'Dashboard'],
-    ['href' => route('organizations.index'), 'text' => 'Organizations'],
-    ['href' => route('organizations.show', $organization), 'text' => $organization->name],
-    ['href' => route('organizations.edit', $organization), 'text' => 'Settings', 'active'],
+['href' => route('dashboard'), 'text' => 'Dashboard'],
+['href' => route('organizations.index'), 'text' => 'Organizaciones'],
+['href' => route('organizations.show', $organization), 'text' => $organization->name],
+['href' => route('organizations.edit', $organization), 'text' => 'Configuracion', 'active'],
 ]])
 
-@section('title', __('Organization settings'))
+@section('title', __('Configuracion Organizacion'))
 
-@section('page_heading', __('Organization settings'))
+@section('page_heading', __('Configuracion Organizacion'))
 
 @section('content')
-    @livewire('organization-form', ['organization' => $organization])
+@livewire('organization-form', ['organization' => $organization])
 @endsection
