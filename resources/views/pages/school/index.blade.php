@@ -1,14 +1,14 @@
 @extends('layouts.app', ['breadcrumbs' => [
     ['href'=> route('dashboard'), 'text'=> 'Dashboard'],
-    ['href'=> route('schools.index'), 'text'=> 'Schools' , 'active']
+    ['href'=> route('schools.index'), 'text'=> 'Escuelas' , 'active']
 ]])
 
-@section('title', __('All schools'))
+@section('title', __('Escuelas'))
 
-@section('page_heading', 'All schools')
+@section('page_heading', 'Escuelas')
 
 @section('page_actions')
-    <x-resource-create-action :href="route('schools.create')" ability="create" :arguments="[\App\Models\School::class]">Add school</x-resource-create-action>
+    <x-resource-create-action :href="route('schools.create')" ability="create" :arguments="[\App\Models\School::class]">Agregar Escuela</x-resource-create-action>
 @endsection
 
 @section('content', )
